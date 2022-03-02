@@ -19,6 +19,7 @@ import genericLibrary.PropertyFileReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pomRepository.HomePage;
 import pomRepository.LoginPage;
+import pomRepository.Time_TrackPage;
 
 /***
  * 
@@ -32,6 +33,8 @@ public class Base_Class implements FrameworkConstants {
 	public PropertyFileReader readFromPropertyFile;
 	public LoginPage loginPage;
 	public HomePage homePage;
+	
+	
 
 	@Parameters("browser")
 	@BeforeClass(alwaysRun = true)
@@ -50,7 +53,7 @@ public class Base_Class implements FrameworkConstants {
 		}
 		driver.manage().window().maximize();
 		Reporter.log("Browser window is maximized successfully", true);
-		driver.manage().timeouts().implicitlyWait(IMPLICIT_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		explicitWait = new WebDriverWait(driver, EXPLICIT_TIMEOUT);
 	}
 
