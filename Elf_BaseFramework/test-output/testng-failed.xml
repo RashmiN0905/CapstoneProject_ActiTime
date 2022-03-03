@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="users.TC_Time_Track_03Test">
+      <class name="users.TC_Time_Track_01Test">
         <methods>
+          <include name="createNewTask"/>
           <include name="openTheBrowser"/>
           <include name="closeTheBrowser"/>
           <include name="loginToApplication"/>
           <include name="logoutOfApplication"/>
-          <include name="modifyingCreatedTask"/>
         </methods>
-      </class> <!-- users.TC_Time_Track_03Test -->
+      </class> <!-- users.TC_Time_Track_01Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

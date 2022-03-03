@@ -8,12 +8,12 @@
       <![CDATA[Browser window is maximized successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-03-02T15:28:59 IST" name="Default suite" finished-at="2022-03-02T15:29:32 IST" duration-ms="32976">
+  <suite started-at="2022-03-03T09:03:19 IST" name="Default suite" finished-at="2022-03-03T09:03:53 IST" duration-ms="34760">
     <groups>
     </groups>
-    <test started-at="2022-03-02T15:28:59 IST" name="Default test" finished-at="2022-03-02T15:29:32 IST" duration-ms="32976">
+    <test started-at="2022-03-03T09:03:19 IST" name="Default test" finished-at="2022-03-03T09:03:53 IST" duration-ms="34760">
       <class name="users.TC_Time_Track_03Test">
-        <test-method is-config="true" signature="openTheBrowser(java.lang.String)[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-02T15:28:59 IST" name="openTheBrowser" finished-at="2022-03-02T15:29:00 IST" duration-ms="1858" status="PASS">
+        <test-method is-config="true" signature="openTheBrowser(java.lang.String)[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-03T09:03:19 IST" name="openTheBrowser" finished-at="2022-03-03T09:03:21 IST" duration-ms="1882" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,19 +30,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- openTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-02T15:29:00 IST" name="loginToApplication" finished-at="2022-03-02T15:29:06 IST" duration-ms="5237" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-03T09:03:21 IST" name="loginToApplication" finished-at="2022-03-03T09:03:26 IST" duration-ms="4981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="modifyingCreatedTask()[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-02T15:29:06 IST" name="modifyingCreatedTask" finished-at="2022-03-02T15:29:29 IST" duration-ms="23638" status="PASS">
+        <test-method signature="modifyingCreatedTask()[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-03T09:03:26 IST" name="modifyingCreatedTask" finished-at="2022-03-03T09:03:51 IST" duration-ms="25418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyingCreatedTask -->
-        <test-method is-config="true" signature="logoutOfApplication()[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-02T15:29:29 IST" name="logoutOfApplication" finished-at="2022-03-02T15:29:31 IST" duration-ms="1565" status="PASS">
+        <test-method is-config="true" signature="logoutOfApplication()[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-03T09:03:51 IST" name="logoutOfApplication" finished-at="2022-03-03T09:03:53 IST" duration-ms="1803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutOfApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-02T15:29:31 IST" name="closeTheBrowser" finished-at="2022-03-02T15:29:32 IST" duration-ms="625" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:users.TC_Time_Track_03Test@61386958]" started-at="2022-03-03T09:03:53 IST" name="closeTheBrowser" finished-at="2022-03-03T09:03:53 IST" duration-ms="648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->

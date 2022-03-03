@@ -10,7 +10,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import genericLibrary.UtilityMethods;
-
+/**
+ * 
+ * @author RashmiN
+ *
+ */
 public class Time_TrackPage {
 
 	public Time_TrackPage(WebDriver driver) {
@@ -169,10 +173,10 @@ public class Time_TrackPage {
 	@FindBy(xpath="//div[contains(text(),'testingSpaceship')]")
 	WebElement bigbangSpaceShipTesting;
 	
-	@FindBy(xpath ="//div[@class='workflowStatus statusType_open statusColor_yellow statusTypeIcon_yellow withPrefix showArrow']")
+	@FindBy(xpath ="(\"//div[text()='Capacity planning: Q2']\")")
 	WebElement statusButton;
 	
-	@FindBy(xpath = "(//div[@class='icon']/..//div[text()='In Progress'])[8]")
+	@FindBy(xpath = "(//div[text()='Planning'])[6]")
 	WebElement InProgressOption;
 
 	
@@ -295,42 +299,26 @@ public class Time_TrackPage {
 	public void modifyingTask(WebDriver driver, String descriptionLine, String commentLineText) throws Throwable {
 		Thread.sleep(2000);
 		bigbangSpaceShipTesting.click();
-//		Thread.sleep(2000);
-//		UtilityMethods util= new UtilityMethods();
-//		util.switchToASpecificWindow(driver,statusButton);
-//		statusButton.click();
-//		Thread.sleep(2000);
-//		InProgressOption.click();
 		Thread.sleep(2000);
+
+		driver.findElement(By.xpath("//div[text()='Status']/..//div[@class=\"taskStatusButton editable\"]")).click();
+		Thread.sleep(2000);
+		
+		billableEngineeringDropdown.click();
+		Thread.sleep(2000);
+		managementOption.click();
+		Thread.sleep(2000);
+		
+		
 		deadLine.click();
 		Thread.sleep(2000);
-//		nextButton.click();
-//		Thread.sleep(2000);
+
 		downArrow.click();Thread.sleep(2000);
 		month.click();Thread.sleep(2000);
 		year.click();Thread.sleep(2000);
 		okButton.click();Thread.sleep(2000);
 		date.click();Thread.sleep(2000);
-		
-
-		billableEngineeringDropdown.click();
-		Thread.sleep(2000);
-		managementOption.click();
-		Thread.sleep(2000);
-//		WebElement vi = driver.findElement(By.xpath("//div[text()='Enter hours']"));
-//		WebDriverWait wait=new WebDriverWait(driver, 10);
-//		wait.until(ExpectedConditions.elementToBeClickable(vi));
-//		estimatedHour.click();
-//		Thread.sleep(2000);
-
-//		estimatedHour.sendKeys("7");		
-//		Thread.sleep(2000);
-//		JavascriptExecutor scrolling = (JavascriptExecutor)driver;
-//		scrolling.executeScript("window.scrollTo(0, 500);");
-//		Thread.sleep(2000);
-//
-//		description.sendKeys(descriptionLine);Thread.sleep(2000);
-//		commentLine.sendKeys(commentLineText);Thread.sleep(2000);
+	
 		hiddenButton.click();Thread.sleep(2000);
 		
 	}
